@@ -1,5 +1,5 @@
 *,*::before,*::after{box-sizing: border-box;}
-section{ margin: 3em; } body { width: 1200px; margin: 0 auto; }
+section{ width: 1200px; margin: 0 auto; } body { margin: 0 auto; }
 button { height: 40px; width: 100px; } input { height: 40px; }
 /*
 * Area 1
@@ -8,19 +8,18 @@ header{
     display: grid;
     height: 600px;
     background-color: white;
-    grid-template: 33% 33% 33% / 300px 300px 300px 300px;
+    grid-template: 33% 33% 33% / 25% 25% 25% 25%;
     grid-template-areas: 
         "areaA areaA areaB areaB"
         "areaC areaC areaC areaC"
         "areaD areaD areaD areaD";
-    grid-gap: 15px;
 }
 .menu{
     grid-area: areaB;
 }
 .titles{
     grid-area: areaC;
-    grid-template: 50% 50% / 1200px; ;
+    grid-template: 50% 50% / 1200px;
     text-align: center;
 }
 .title{
@@ -31,6 +30,7 @@ header{
 }
 .enter{
     grid-area: areaD;
+    margin: 0 auto;
 }
 
 /*
@@ -114,7 +114,7 @@ header{
     display: grid;
     height: 400px;
     background-color: blue;
-    grid-template: 50px 80px 80px 80px 50px / 100%;
+    grid-template: 50px 80px 80px 80px 50px / 1200px;
     grid-template-areas: 
         "areaA"
         "areaB"
@@ -147,18 +147,19 @@ header{
     grid-template-areas: 
         "areaA areaA areaA"
         "areaB areaB areaB"
-        "areaC areaC areaE"
-        "areaF areaF areaF";
+        "areaC areaC areaC"
+        "areaD areaD areaD";
     grid-gap: 15px;
 }
 .text6{
+    margin: 0 auto;
     grid-area: areaB;
 }
 .field{
     grid-area: areaC;
 }
 .send{
-    grid-area: areaE;
+    grid-area: areaC;
 }
 
 /*
@@ -168,7 +169,7 @@ footer{
     display: grid;
     height: 200px;
     background-color: blue;
-    grid-template: 50px 52px 52px 50px / 288px 289px 289px 289px;
+    grid-template: 50px 52px 52px 50px / 25% 25% 25% 25%;
     grid-template-areas: 
         "areaA areaA areaA areaA"
         "areaB areaC areaC areaD"
@@ -176,6 +177,7 @@ footer{
         "areaF areaF areaF areaF";
 }
 .imgbox{
+    display: inline;
     grid-area: areaC;
     grid-template: 52px / 114px 114px 114px 114px 114px;
 }
@@ -184,12 +186,7 @@ footer{
     width: 20px;
     height: 20px;
 }
-.imgf2{
-    grid-area: 1 / 2 / 2 / 3; 
-    background-color: green;
-    width: 20px;
-    height: 20px;
-}
 .text7{
     grid-area: areaE;
+    margin: 0 auto;
 }
