@@ -79,9 +79,9 @@ header{
 */
 .wid-2{
     display: grid;
-    height: 400px;
+    height: 600px;
     background-color: white;
-    grid-template: 50px 95px 160px 50px / 390px 390px 390px;
+    grid-template: 50px 145px 310px 50px / 390px 390px 390px;
     grid-template-areas: 
         "areaA areaA areaA"
         "areaB areaB areaB"
@@ -117,27 +117,32 @@ header{
 */
 .wid-3{
     display: grid;
-    height: 400px;
+    height: 495px;
     background-color: blue;
-    grid-template: 50px 80px 80px 80px 50px / 1200px;
+    grid-template: 50px 80px 80px 80px 80px 50px / 1200px;
     grid-template-areas: 
         "areaA"
         "areaB"
         "areaC"
         "areaD"
-        "areaE";
+        "areaE"
+        "areaF";
     grid-gap: 15px;
 }
-.text3{
+.title-wid-3{
     grid-area: areaB;
     text-align: center;
 }
-.text4{
+.text3{
     grid-area: areaC;
     text-align: center;
 }
-.text5{
+.text4{
     grid-area: areaD;
+    text-align: center;
+}
+.text5{
+    grid-area: areaE;
     text-align: center;
 }
 
@@ -182,11 +187,13 @@ footer{
         "areaF areaF areaF areaF";
 }
 .imgbox{
-    display: inline;
     grid-area: areaC;
     grid-template: 52px / 114px 114px 114px 114px 114px;
 }
 .imgf{
+    display:block;
+    float:left;
+    margin-left: 10px;
     background-color: white;
     width: 20px;
     height: 20px;
