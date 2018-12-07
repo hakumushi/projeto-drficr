@@ -14,7 +14,11 @@ header{
         "areaC areaC areaC areaC"
         "areaD areaD areaD areaD";
 }
+.logo{
+    margin-left: 30px;
+}
 .menu{
+    margin-top: 20px;
     grid-area: areaB;
 }
 .titles{
@@ -102,6 +106,7 @@ header{
     text-align: center;
 }
 .imgb{
+    margin: 0 auto;
     width: 40px;
     height: 40px;
     background-color: blue;
@@ -152,7 +157,7 @@ header{
     grid-gap: 15px;
 }
 .text6{
-    margin: 0 auto;
+    text-align: center;
     grid-area: areaB;
 }
 .field{
