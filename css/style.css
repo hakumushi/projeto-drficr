@@ -157,8 +157,8 @@ header{
     grid-template-areas: 
         "areaA areaA areaA"
         "areaB areaB areaB"
-        "areaC areaC areaC"
-        "areaD areaD areaD";
+        "areaC areaC areaD"
+        "areaE areaE areaE";
     grid-gap: 15px;
 }
 .text6{
@@ -167,9 +167,12 @@ header{
 }
 .field{
     grid-area: areaC;
+    margin-top: 20px;
 }
 .send{
-    grid-area: areaC;
+    grid-area: areaD;
+    height: 40px; width: 200px;
+    margin-top: 20px;
 }
 
 /*
@@ -187,18 +190,25 @@ footer{
         "areaF areaF areaF areaF";
 }
 .imgbox{
+    display: grid;
     grid-area: areaC;
-    grid-template: 52px / 114px 114px 114px 114px 114px;
+    grid-template: 100% / 20% 12% 12% 12% 12% 12% 20%;
 }
 .imgf{
-    display:block;
-    float:left;
-    margin-left: 10px;
+    margin: 0 auto;
     background-color: white;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
+
+.twitter{ grid-area: 1 / 2 / 2 / 3; }
+.facebook{ grid-area: 1 / 3 / 2 / 4; }
+.snap{ grid-area: 1 / 4 / 2 / 5; }
+.pinterest{ grid-area: 1 / 5 / 2 / 6; }
+.github{ grid-area: 1 / 6 / 2 / 7; }
+
 .text7{
     grid-area: areaE;
     margin: 0 auto;
+    margin-top: 20px;
 }
