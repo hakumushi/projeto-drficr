@@ -44,14 +44,14 @@ header{
     display: grid;
     height: 600px;
     background-color: blue;
-    grid-template: 50px 160px 140px 140px 50px / 390px 390px 390px;
+    grid-template: 50px 160px 140px 140px 50px / 32.5% 32.5% 32.5%;
     grid-template-areas: 
         "areaA areaA areaA"
         "areaB areaB areaB"
         "areaC areaD areaD"
         "areaE areaE areaF"
         "areaG areaG areaG";
-    grid-gap: 15px;
+    grid-gap: 15px 1.25%;
 }
 .text1{
     grid-area: areaB;
@@ -81,13 +81,13 @@ header{
     display: grid;
     height: 600px;
     background-color: white;
-    grid-template: 50px 145px 310px 50px / 390px 390px 390px;
+    grid-template: 50px 145px 310px 50px / 32.5% 32.5% 32.5%;
     grid-template-areas: 
         "areaA areaA areaA"
         "areaB areaB areaB"
         "areaC areaD areaE"
         "areaF areaF areaF";
-    grid-gap: 15px;
+    grid-gap: 15px 1.25%;
 }
 .text2{
     grid-area: areaB;
@@ -111,6 +111,9 @@ header{
     height: 40px;
     background-color: blue;
 }
+.textb{
+    word-break: break-all;
+}
 
 /*
 * Area 4
@@ -119,7 +122,7 @@ header{
     display: grid;
     height: 495px;
     background-color: blue;
-    grid-template: 50px 80px 80px 80px 80px 50px / 1200px;
+    grid-template: 50px 80px 80px 80px 80px 50px / 100%;
     grid-template-areas: 
         "areaA"
         "areaB"
@@ -153,13 +156,13 @@ header{
     display: grid;
     height: 400px;
     background-color: white;
-    grid-template: 50px 95px 160px 50px / 390px 390px 390px;
+    grid-template: 50px 95px 160px 50px / 32.5% 32.5% 32.5%;
     grid-template-areas: 
         "areaA areaA areaA"
         "areaB areaB areaB"
         "areaC areaC areaD"
         "areaE areaE areaE";
-    grid-gap: 15px;
+    grid-gap: 15px 1.25%;
 }
 .text6{
     text-align: center;
@@ -171,7 +174,7 @@ header{
 }
 .send{
     grid-area: areaD;
-    height: 40px; width: 200px;
+    height: 40px; width: 51.2%;
     margin-top: 20px;
 }
 
@@ -211,4 +214,12 @@ footer{
     grid-area: areaE;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    section{ width: 768px; margin: 0 auto; }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    section{ width: 320px; margin: 0 auto; }
 }
