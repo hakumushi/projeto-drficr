@@ -1,5 +1,4 @@
 # Projeto Final Design Responsivo
----
 
 1. O projeto é individual e intransferível.
 2. Organizar tudo por pastas
