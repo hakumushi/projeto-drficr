@@ -1,18 +1,22 @@
 *,*::before,*::after{box-sizing: border-box;}
 .section{ width: 1200px; margin: 0 auto; } body { margin: 0 auto; }
 button { height: 40px; width: 100px; } input { height: 40px; }
+.blue{ background-color: #00205B; color: white; }
+a, a:visited{ text-decoration: none; color: white; margin-left: 10px; font-size: 24px;}
+a:hover {color: #3c4789; }
 /*
 * Area 1
 */
 header{
     display: grid;
     height: 600px;
-    background-color: white;
+    background-image: url("../assets/maple.jpg");
     grid-template: 33% 33% 33% / 25% 25% 25% 25%;
     grid-template-areas: 
         "areaA areaA areaB areaB"
         "areaC areaC areaC areaC"
         "areaD areaD areaD areaD";
+    color: white;
 }
 .logo{
     margin-left: 30px;
@@ -40,9 +44,6 @@ header{
 /*
 * Area 2
 */
-.blue{
-    background-color: blue;
-}
 .wid-1{
     display: grid;
     height: 600px;
@@ -61,19 +62,19 @@ header{
 }
 .img1{
     grid-area: areaC;
-    background-color: white;
+    background-color: #00205B;
 }
 .img2{
     grid-area: areaD;
-    background-color: white;
+    background-color: #00205B;
 }
 .img3{
     grid-area: areaE;
-    background-color: white;
+    background-color: #00205B;
 }
 .img4{
     grid-area: areaF;
-    background-color: white;
+    background-color: #00205B;
 }
 
 /*
@@ -82,7 +83,6 @@ header{
 .wid-2{
     display: grid;
     height: 600px;
-    background-color: white;
     grid-template: 50px 145px 310px 50px / 32.5% 32.5% 32.5%;
     grid-template-areas: 
         "areaA areaA areaA"
@@ -111,7 +111,7 @@ header{
     margin: 0 auto;
     width: 40px;
     height: 40px;
-    background-color: blue;
+    background-color: white;
 }
 .textb{
     word-break: break-all;
@@ -123,7 +123,6 @@ header{
 .wid-3{
     display: grid;
     height: 495px;
-    background-color: blue;
     grid-template: 50px 80px 80px 80px 80px 50px / 100%;
     grid-template-areas: 
         "areaA"
@@ -157,7 +156,6 @@ header{
 .wid-4{
     display: grid;
     height: 400px;
-    background-color: white;
     grid-template: 50px 95px 160px 50px / 32.5% 32.5% 32.5%;
     grid-template-areas: 
         "areaA areaA areaA"
@@ -176,7 +174,7 @@ header{
 }
 .send{
     grid-area: areaD;
-    height: 40px; width: 60%;
+    width: 60%;
     margin-top: 20px;
 }
 
@@ -186,7 +184,7 @@ header{
 footer{
     display: grid;
     height: 200px;
-    background-color: blue;
+    background-color: white;
     grid-template: 50px 52px 52px 50px / 25% 25% 25% 25%;
     grid-template-areas: 
         "areaA areaA areaA areaA"
@@ -201,7 +199,7 @@ footer{
 }
 .imgf{
     margin: 0 auto;
-    background-color: white;
+    background-color: #00205B;
     width: 30px;
     height: 30px;
 }
@@ -223,5 +221,16 @@ footer{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
+    a, a:visited{ font-size: 16px;}
     .section{ width: 320px; margin: 0 auto; }
+    .imgbox{
+        display: grid;
+        grid-area: areaC;
+        grid-template: 100% / 20% 20% 20% 20% 20%;
+    }
+    .twitter{ grid-area: 1 / 1 / 2 / 2; }
+    .facebook{ grid-area: 1 / 2 / 2 / 3; }
+    .snap{ grid-area: 1 / 3 / 2 / 4; }
+    .pinterest{ grid-area: 1 / 4 / 2 / 5; }
+    .github{ grid-area: 1 / 5 / 2 / 6; }
 }
