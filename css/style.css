@@ -57,26 +57,33 @@ header{
         "areaE areaE areaF"
         "areaG areaG areaG";
     grid-gap: 15px 1.25%;
+    color: #00205B;
 }
 .text1{
     grid-area: areaB;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .img1{
     grid-area: areaC;
-    background-color: #00205B;
+    background-image: url("../assets/arena-1200.png");
+    margin-left: 10px;
 }
 .img2{
     grid-area: areaD;
-    background-color: #00205B;
+    background-image: url("../assets/basquete-1200.png");
+    margin-right: 10px;
 }
 .img3{
     grid-area: areaE;
-    background-color: #00205B;
+    background-image: url("../assets/hoquei-1200.png");
+    margin-left: 10px;
 }
 .img4{
     grid-area: areaF;
-    background-color: #00205B;
+    background-image: url("../assets/lacrosse-1200.jpg");
+    margin-right: 10px;
 }
 
 /*
@@ -111,12 +118,15 @@ header{
 }
 .imgb{
     margin: 0 auto;
-    width: 40px;
-    height: 40px;
-    background-color: white;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url("../assets/stanley.png");
 }
 .textb{
     word-break: break-all;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*
@@ -134,22 +144,31 @@ header{
         "areaE"
         "areaF";
     grid-gap: 15px;
+    color: #00205B;
 }
 .title-wid-3{
     grid-area: areaB;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .text3{
     grid-area: areaC;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .text4{
     grid-area: areaD;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .text5{
     grid-area: areaE;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*
@@ -169,9 +188,12 @@ header{
 .text6{
     text-align: center;
     grid-area: areaB;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .field{
     grid-area: areaC;
+    margin-left: 10px;
     margin-top: 20px;
 }
 .send{
@@ -193,6 +215,7 @@ footer{
         "areaB areaC areaC areaD"
         "areaE areaE areaE areaE"
         "areaF areaF areaF areaF";
+    color: #00205B;
 }
 .imgbox{
     display: grid;
@@ -201,16 +224,31 @@ footer{
 }
 .imgf{
     margin: 0 auto;
-    background-color: #00205B;
     width: 30px;
     height: 30px;
+    background-size: 30px 30px;
 }
 
-.twitter{ grid-area: 1 / 2 / 2 / 3; }
-.facebook{ grid-area: 1 / 3 / 2 / 4; }
-.snap{ grid-area: 1 / 4 / 2 / 5; }
-.pinterest{ grid-area: 1 / 5 / 2 / 6; }
-.github{ grid-area: 1 / 6 / 2 / 7; }
+.twitter{ 
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url("../assets/twitter.png");
+}
+.facebook{ 
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url("../assets/facebook.png");
+}
+.instagram{ 
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url("../assets/instagram.png");
+}
+.pinterest{ 
+    grid-area: 1 / 5 / 2 / 6; 
+    background-image: url("../assets/pinterest.png");
+}
+.github{ 
+    grid-area: 1 / 6 / 2 / 7;
+    background-image: url("../assets/github.png");
+}
 
 .text7{
     grid-area: areaE;
@@ -238,7 +276,7 @@ footer{
     }
     .twitter{ grid-area: 1 / 1 / 2 / 2; }
     .facebook{ grid-area: 1 / 2 / 2 / 3; }
-    .snap{ grid-area: 1 / 3 / 2 / 4; }
+    .instagram{ grid-area: 1 / 3 / 2 / 4; }
     .pinterest{ grid-area: 1 / 4 / 2 / 5; }
     .github{ grid-area: 1 / 5 / 2 / 6; }
 }
