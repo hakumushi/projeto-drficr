@@ -4,13 +4,15 @@ button { height: 40px; width: 100px; } input { height: 40px; }
 .blue{ background-color: #00205B; color: white; }
 a, a:visited{ text-decoration: none; color: white; margin-left: 10px; font-size: 24px;}
 a:hover {color: #3c4789; }
+input[type=submit]{ -webkit-appearance: button; }
+
 /*
 * Area 1
 */
 header{
     display: grid;
     height: 600px;
-    background-image: url("../assets/maple.jpg");
+    background-image: url("../assets/1200.jpg");
     grid-template: 33% 33% 33% / 25% 25% 25% 25%;
     grid-template-areas: 
         "areaA areaA areaB areaB"
@@ -216,11 +218,17 @@ footer{
     margin-top: 20px;
 }
 
+@media only screen and (min-width: 1920px){
+    header{ background-image: url("../assets/1920.jpg"); }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .section{ width: 768px; margin: 0 auto; }
+    header{ background-image: url("../assets/768.jpg"); }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
+    header{ background-image: url("../assets/320.jpg"); }
     a, a:visited{ font-size: 16px;}
     .section{ width: 320px; margin: 0 auto; }
     .imgbox{
